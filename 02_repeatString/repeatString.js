@@ -3,10 +3,18 @@
 
 const repeatString = function(inputString,repeatNum) {
     let newString = '';
-    for (let i = 0; i < repeatNum; i++) {
+    let i = 0;
+
+    
+    if (repeatNum < 0) {
+        return 'ERROR';
+    } else {
+	for (let i = 0; i < repeatNum; i++) {
         newString += inputString;
+        
     }
     return newString;
+}
 
     /*
     for (let currentNum = 0; repeatNumber > currentNum; currentNum++) {
